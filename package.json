@@ -1,0 +1,14 @@
+{
+  "name": "campusflow-ai-integration-layer",
+  "version": "1.0.0",
+  "description": "Node.js Express AI integration layer for CampusFlow Groq and n8n workflows.",
+  "main": "routes/ai.js",
+  "scripts": {
+    "check": "node -e \"require('./routes/ai'); require('./services/aiService'); require('./services/n8nService'); require('./utils/parser'); require('./utils/validators'); require('./utils/transformers'); console.log('AI integration modules loaded')\""
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
